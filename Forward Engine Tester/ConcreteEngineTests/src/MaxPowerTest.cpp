@@ -16,5 +16,5 @@ std::pair<double, double> MaxPowerTest <std::pair<double, double>>::run(double s
 		previous_power = current_power;
 		current_power = M * V / 1000;
 	}
-	return { current_power, M };
+	return { current_power, V };
 }

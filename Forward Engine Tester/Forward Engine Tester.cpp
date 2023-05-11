@@ -39,7 +39,7 @@ int main()
 		IEngineTest<std::pair<double, double>>* mpt = new MaxPowerTest<std::pair<double, double>>(engine);
 		std::pair<double, double> res = mpt->run(1);
 		std::cout << "Max power: " << res.first << " kW ";
-		std::cout << "at torque: " << res.second << " Nm" << std::endl;
+		std::cout << "at crankshaft speed : " << res.second << " rad/s" << std::endl;
 	}
 	catch (std::exception& e)
 	{
